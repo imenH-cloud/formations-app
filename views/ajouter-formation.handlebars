@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajouter une Formation</title>
+</head>
+<body>
+  <h1>Ajouter une Formation</h1>
+  <form action="/ajouter-formation" method="POST">
+    <label for="titre">Titre:</label>
+    <input type="text" id="titre" name="titre" required><br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea><br>
+    <label for="etudiant">Étudiant:</label>
+    <input type="text" id="etudiant" name="etudiant" required><br>
+    <button type="submit">Ajouter</button>
+  </form>
+  <a href="/liste-formations">Retour à la liste</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+// checkFile.js
+const fs = require('fs');
+const path = require('path');
+
+// Define the path to the home view file
+const filePath = path.join(__dirname, 'views', 'home.handlebars');
+
+// Check if the file exists
+fs.access(filePath, fs.constants.F_OK, (err) => {
+    if (err) {
+        console.log('File does not exist:', filePath);
+    } else {
+        console.log('File exists:', filePath);
+    }
+});

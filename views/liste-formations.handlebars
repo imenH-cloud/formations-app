@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liste des Formations</title>
+</head>
+<body>
+  <h1>Liste des Formations</h1>
+  <ul>
+    {{#each suggestions}}
+    <li>
+      <h2>{{titre}}</h2>
+      <p>{{description}}</p>
+      <p>Suggéré par: {{etudiant}}</p>
+      <p>Date: {{date_suggestion}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  <a href="/ajouter-formation">Ajouter une formation</a>
+  <a href="/recherche-formation">Rechercher une formation</a>
+</body>
+</html>
